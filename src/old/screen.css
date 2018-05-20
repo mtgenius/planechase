@@ -1,18 +1,7 @@
-body {
-  background-color: #202020;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 #card {
   height: 100%;
   width: 100%;
   background: red;
-}
-
-html {
-  height: 100%;
 }
 
 #settings {
