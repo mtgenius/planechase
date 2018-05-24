@@ -1,6 +1,6 @@
 {
-  "short_name": "Planechase",
-  "name": "Planechase",
+  "background_color": "#202020",
+  "display": "standalone",
   "icons": [
     {
       "sizes": "16x16",
@@ -23,8 +23,8 @@
       "type": "image/png"
     }
   ],
+  "name": "Planechase",
+  "short_name": "Planechase",
   "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#202020",
-  "background_color": "#202020"
+  "theme_color": "#202020"
 }
