@@ -1,1 +1,348 @@
-{"planechase":["academy-at-tolaria-west.jpg","agyrem.jpg","bant.jpg","cliffside-market.jpg","eloren-wilds.jpg","feeding-grounds.jpg","fields-of-summer.jpg","glimmervoid-basin.jpg","goldmeadow.jpg","grixis.jpg","immersturm.jpg","isle-of-vesuva.jpg","izzet-steam-maze.jpg","krosa.jpg","lethe-lake.jpg","llanowar.jpg","minamo.jpg","murasa.jpg","naar-isle.jpg","naya.jpg","otaria.jpg","panopticon.jpg","pools-of-becoming.jpg","ravens-run.jpg","sanctum-of-serra.jpg","sea-of-sand.jpg","shiv.jpg","skybreen.jpg","sokenzan.jpg","stronghold-furnace.jpg","the-aether-flues.jpg","the-dark-barony.jpg","the-eon-fog.jpg","the-fourth-sphere.jpg","the-great-forest.jpg","the-hippodrome.jpg","the-maelstrom.jpg","turri-island.jpg","undercity-reaches.jpg","velis-vel.jpg"],"planechase-2013":["akoum.jpg","aretopolis.jpg","astral-arena.jpg","bloodhill-bastion.jpg","chaotic-aether.jpg","edge-of-malacol.jpg","furnace-layer.jpg","gavony.jpg","glen-elendra.jpg","grand-ossuary.jpg","grove-of-the-dreampods.jpg","hedron-fields-of-agadeem.jpg","interplanar-tunnel.jpg","jund.jpg","kessig.jpg","kharasha-foothills.jpg","kilnspire-district.jpg","lair-of-the-ashen-idol.jpg","morphic-tide.jpg","mount-keralia.jpg","mutual-epiphany.jpg","nephalia.jpg","norns-dominion.jpg","onakke-catacomb.jpg","orochi-colony.jpg","orzhova.jpg","planewide-disaster.jpg","prahv.jpg","quicksilver-sea.jpg","reality-shaping.jpg","selesnya-loft-gardens.jpg","spatial-merging.jpg","stairs-to-infinity.jpg","stensia.jpg","takenuma.jpg","talon-gates.jpg","the-zephyr-maze.jpg","time-distortion.jpg","trail-of-the-mage-rings.jpg","truga-jungle.jpg","windriddle-palaces.jpg"],"planechase-anthology":["academy-at-tolaria-west.jpg","agyrem.jpg","akoum.jpg","aretopolis.jpg","astral-arena.jpg","bant.jpg","bloodhill-bastion.jpg","chaotic-aether.jpg","cliffside-market.jpg","edge-of-malacol.jpg","eloren-wilds.jpg","feeding-grounds.jpg","fields-of-summer.jpg","furnace-layer.jpg","gavony.jpg","glen-elendra.jpg","glimmervoid-basin.jpg","goldmeadow.jpg","grand-ossuary.jpg","grixis.jpg","grove-of-the-dreampods.jpg","hedron-fields-of-agadeem.jpg","immersturm.jpg","interplanar-tunnel.jpg","isle-of-vesuva.jpg","izzet-steam-maze.jpg","jund.jpg","kessig.jpg","kharasha-foothills.jpg","kilnspire-district.jpg","krosa.jpg","lair-of-the-ashen-idol.jpg","lethe-lake.jpg","llanowar.jpg","minamo.jpg","morphic-tide.jpg","mount-keralia.jpg","murasa.jpg","mutual-epiphany.jpg","naar-isle.jpg","naya.jpg","nephalia.jpg","norns-dominion.jpg","onakke-catacomb.jpg","orochi-colony.jpg","orzhova.jpg","otaria.jpg","panopticon.jpg","planewide-disaster.jpg","pools-of-becoming.jpg","prahv.jpg","quicksilver-sea.jpg","ravens-run.jpg","reality-shaping.jpg","sanctum-of-serra.jpg","sea-of-sand.jpg","selesnya-loft-gardens.jpg","shiv.jpg","skybreen.jpg","sokenzan.jpg","spatial-merging.jpg","stairs-to-infinity.jpg","stensia.jpg","stronghold-furnace.jpg","takenuma.jpg","talon-gates.jpg","the-aether-flues.jpg","the-dark-barony.jpg","the-eon-fog.jpg","the-fourth-sphere.jpg","the-great-forest.jpg","the-hippodrome.jpg","the-maelstrom.jpg","the-zephyr-maze.jpg","time-distortion.jpg","trail-of-the-mage-rings.jpg","truga-jungle.jpg","turri-island.jpg","undercity-reaches.jpg","velis-vel.jpg","windriddle-palaces.jpg"]}
+{
+  "cards": [
+    {
+      "name": "Academy at Tolaria West",
+      "path": "academy-at-tolaria-west"
+    },
+    {
+      "name": "Agyrem",
+      "path": "agyrem"
+    },
+    {
+      "name": "Akoum",
+      "path": "akoum"
+    },
+    {
+      "name": "Aretopolis",
+      "path": "aretopolis"
+    },
+    {
+      "name": "Astral Arena",
+      "path": "astral-arena"
+    },
+    {
+      "name": "Bant",
+      "path": "bant"
+    },
+    {
+      "name": "Bloodhill Bastion",
+      "path": "bloodhill-bastion"
+    },
+    {
+      "name": "Chaotic \u00C6ther",
+      "path": "chaotic-aether"
+    },
+    {
+      "name": "Cliffside Market",
+      "path": "cliffside-market"
+    },
+    {
+      "name": "Edge of Malacol",
+      "path": "edge-of-malacol"
+    },
+    {
+      "name": "Eloren Wilds",
+      "path": "eloren-wilds"
+    },
+    {
+      "name": "Feeding Grounds",
+      "path": "feeding-grounds"
+    },
+    {
+      "name": "Fields of Summer",
+      "path": "fields-of-summer"
+    },
+    {
+      "name": "Furnace Layer",
+      "path": "furnace-layer"
+    },
+    {
+      "name": "Gavony",
+      "path": "gavony"
+    },
+    {
+      "name": "Glen Elendra",
+      "path": "glen-elendra"
+    },
+    {
+      "name": "Glimmervoid Basin",
+      "path": "glimmervoid-basin"
+    },
+    {
+      "name": "Goldmeadow",
+      "path": "goldmeadow"
+    },
+    {
+      "name": "Grand Ossuary",
+      "path": "grand-ossuary"
+    },
+    {
+      "name": "Grixis",
+      "path": "grixis"
+    },
+    {
+      "name": "Grove of the Dreampods",
+      "path": "grove-of-the-dreampods"
+    },
+    {
+      "name": "Hedron Fields of Agadeem",
+      "path": "hedron-fields-of-agadeem"
+    },
+    {
+      "name": "Immersturm",
+      "path": "immersturm"
+    },
+    {
+      "name": "Interplanar Tunnel",
+      "path": "interplanar-tunnel"
+    },
+    {
+      "name": "Isle of Vesuva",
+      "path": "isle-of-vesuva"
+    },
+    {
+      "name": "Izzet Steam Maze",
+      "path": "izzet-steam-maze"
+    },
+    {
+      "name": "Jund",
+      "path": "jund"
+    },
+    {
+      "name": "Kessig",
+      "path": "kessig"
+    },
+    {
+      "name": "Kharasha Foothills",
+      "path": "kharasha-foothills"
+    },
+    {
+      "name": "Kilnspire District",
+      "path": "kilnspire-district"
+    },
+    {
+      "name": "Krosa",
+      "path": "krosa"
+    },
+    {
+      "name": "Lair of the Ashen Idol",
+      "path": "lair-of-the-ashen-idol"
+    },
+    {
+      "name": "Lethe Lake",
+      "path": "lethe-lake"
+    },
+    {
+      "name": "Llanowar",
+      "path": "llanowar"
+    },
+    {
+      "name": "Minamo",
+      "path": "minamo"
+    },
+    {
+      "name": "Morphic Tide",
+      "path": "morphic-tide"
+    },
+    {
+      "name": "Mount Keralia",
+      "path": "mount-keralia"
+    },
+    {
+      "name": "Murasa",
+      "path": "murasa"
+    },
+    {
+      "name": "Mutual Epiphany",
+      "path": "mutual-epiphany"
+    },
+    {
+      "name": "Naar Isle",
+      "path": "naar-isle"
+    },
+    {
+      "name": "Naya",
+      "path": "naya"
+    },
+    {
+      "name": "Nephalia",
+      "path": "nephalia"
+    },
+    {
+      "name": "Norn's Dominion",
+      "path": "norns-dominion"
+    },
+    {
+      "name": "Onakke Catacomb",
+      "path": "onakke-catacomb"
+    },
+    {
+      "name": "Orochi Colony",
+      "path": "orochi-colony"
+    },
+    {
+      "name": "Orzhova",
+      "path": "orzhova"
+    },
+    {
+      "name": "Otaria",
+      "path": "otaria"
+    },
+    {
+      "name": "Panopticon",
+      "path": "panopticon"
+    },
+    {
+      "name": "Planewide Disaster",
+      "path": "planewide-disaster"
+    },
+    {
+      "name": "Pools of Becoming",
+      "path": "pools-of-becoming"
+    },
+    {
+      "name": "Prahv",
+      "path": "prahv"
+    },
+    {
+      "name": "Quicksilver Sea",
+      "path": "quicksilver-sea"
+    },
+    {
+      "name": "Raven's Run",
+      "path": "ravens-run"
+    },
+    {
+      "name": "Reality Shaping",
+      "path": "reality-shaping"
+    },
+    {
+      "name": "Sanctum of Serra",
+      "path": "sanctum-of-serra"
+    },
+    {
+      "name": "Sea of Sand",
+      "path": "sea-of-sand"
+    },
+    {
+      "name": "Selesnya Loft Gardens",
+      "path": "selesnya-loft-gardens"
+    },
+    {
+      "name": "Shiv",
+      "path": "shiv"
+    },
+    {
+      "name": "Skybreen",
+      "path": "skybreen"
+    },
+    {
+      "name": "Sokenzan",
+      "path": "sokenzan"
+    },
+    {
+      "name": "Spatial Merging",
+      "path": "spatial-merging"
+    },
+    {
+      "name": "Stairs to Infinity",
+      "path": "stairs-to-infinity"
+    },
+    {
+      "name": "Stensia",
+      "path": "stensia"
+    },
+    {
+      "name": "Stronghold Furnace",
+      "path": "stronghold-furnace"
+    },
+    {
+      "name": "Takenuma",
+      "path": "takenuma"
+    },
+    {
+      "name": "Talon Gates",
+      "path": "talon-gates"
+    },
+    {
+      "name": "The \u00C6ther Flues",
+      "path": "the-aether-flues"
+    },
+    {
+      "name": "The Dark Barony",
+      "path": "the-dark-barony"
+    },
+    {
+      "name": "The Eon Fog",
+      "path": "the-eon-fog"
+    },
+    {
+      "name": "The Fourth Sphere",
+      "path": "the-fourth-sphere"
+    },
+    {
+      "name": "The Great Forest",
+      "path": "the-great-forest"
+    },
+    {
+      "name": "The Hippodrome",
+      "path": "the-hippodrome"
+    },
+    {
+      "name": "The Maelstrom",
+      "path": "the-maelstrom"
+    },
+    {
+      "name": "The Zephyr Maze",
+      "path": "the-zephyr-maze"
+    },
+    {
+      "name": "Time Distortion",
+      "path": "time-distortion"
+    },
+    {
+      "name": "Trail of the Mage Rings",
+      "path": "trail-of-the-mage-rings"
+    },
+    {
+      "name": "Truga Jungle",
+      "path": "truga-jungle"
+    },
+    {
+      "name": "Turri Island",
+      "path": "turri-island"
+    },
+    {
+      "name": "Undercity Reaches",
+      "path": "undercity-reaches"
+    },
+    {
+      "name": "Velis Vel",
+      "path": "velis-vel"
+    },
+    {
+      "name": "Windriddle Palaces",
+      "path": "windriddle-palaces"
+    }
+  ],
+  "sets": [
+    {
+      "name": "Planechase",
+      "path": "planechase",
+      "cards": [0, 1, 5, 8, 10, 11, 12, 16, 17, 19, 22, 24, 25, 30, 32, 33, 34, 37, 39, 40, 46, 47, 49, 52, 54, 55, 57, 58, 59, 63, 66, 67, 68, 69, 70, 71, 72, 77, 78, 79],
+      "ext": "jpg"
+    },
+    {
+      "name": "Planechase 2013",
+      "path": "planechase-2013",
+      "cards": [2, 3, 4, 6, 7, 9, 13, 14, 15, 18, 20, 21, 23, 26, 27, 28, 29, 31, 35, 36, 38, 41, 42, 43, 44, 45, 48, 50, 51, 53, 56, 60, 61, 62, 64, 65, 73, 74, 75, 76, 80],
+      "ext": "jpg"
+    },
+    {
+      "name": "Planechase Anthology",
+      "path": "planechase-anthology",
+      "cards": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80],
+      "ext": "jpg"
+    }
+  ]
+}

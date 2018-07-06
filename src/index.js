@@ -4,7 +4,8 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './components/app/app';
 import reducer from './constants/reducer';
-import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './register-service-worker';
+import './assets/screen.css';
 
 ReactDOM.render(
   <Provider store={createStore(reducer)}>
@@ -12,4 +13,9 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
+
 registerServiceWorker();
+
+if (module.hot) {
+  module.hot.accept();
+}

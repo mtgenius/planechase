@@ -1,0 +1,9 @@
+.card {
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+  .card > img {
+    max-height: 100%;
+    max-width: 100%;
+  }

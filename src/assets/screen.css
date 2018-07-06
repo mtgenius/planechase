@@ -15,11 +15,6 @@ html {
   height: 100%;
 }
 
-#settings {
-  display: block;
-  height: 4em;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 4em;
+#root {
+  height: 100%;
 }
