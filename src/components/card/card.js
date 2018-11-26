@@ -1,8 +1,24 @@
-import React, { useGlobal } from 'reactn';
+import React, { useEffect, useGlobal, useState } from 'reactn';
 import cards from '../../cards';
 import './card.scss';
 
 const useCard = (card, set) => {
+  const [ fadingOut, setFadingOut ] = useState(false);
+
+  useEffect(
+    () => {
+      let timeout = null;
+      if (fadingOut) {
+        timeout = setTimeout(() => {
+          bottomCard(card, set);
+        }, 500);
+      }
+      return () => {
+        clearTimeout(timeout);
+      };
+    }
+  );
+
   const bottomCard = useGlobal((global, cardId, setId) => {
     const findCard = ([ s, c ]) => s === setId && c === cardId;
     const index = global.deck.findIndex(findCard);
@@ -17,21 +33,26 @@ const useCard = (card, set) => {
     };
   });
 
+  const className =
+    fadingOut ?
+      'card card-fading-out' :
+      'card';
+
   const handleClick = e => {
     e.preventDefault();
-    bottomCard(card, set);
+    setFadingOut(true);
   };
 
-  return { handleClick };
+  return { className, handleClick };
 };
 
 const Card = ({ card, set }) => {
-  const { handleClick } = useCard(card, set);
+  const { className, handleClick } = useCard(card, set);
   const cardInfo = cards.cards[card];
   const setInfo = cards.sets[set];
   return (
     <a
-      className="card"
+      className={className}
       href="#"
       onClick={handleClick}
     >

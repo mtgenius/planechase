@@ -1,6 +1,6 @@
 import React, { setGlobal } from 'reactn';
 import ReactDOM from 'react-dom';
-import './assets/screen.css';
+import './assets/screen.scss';
 import cards from './cards';
 import App from './components/app/app';
 import shuffle from './constants/shuffle';
@@ -10,7 +10,7 @@ const planechaseAnthologyDeck = cards.sets[2].cards.map(card => [ 2, card ]);
 shuffle(planechaseAnthologyDeck);
 
 setGlobal({
-  active: 3,
+  active: 1,
   deck: planechaseAnthologyDeck
 });
 
