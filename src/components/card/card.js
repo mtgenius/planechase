@@ -53,7 +53,7 @@ const Card = ({ card, set }) => {
   return (
     <a
       className={className}
-      href="#"
+      href={`#${setInfo.path}/${cardInfo.path}`}
       onClick={handleClick}
     >
       <img
