@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { setGlobal } from 'reactn';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import App from './components/app/app';
-import reducer from './constants/reducer';
-import registerServiceWorker from './register-service-worker';
 import './assets/screen.css';
+import cards from './cards';
+import App from './components/app/app';
+import shuffle from './constants/shuffle';
+import registerServiceWorker from './register-service-worker';
+
+const planechaseAnthologyDeck = cards.sets[2].cards.map(card => [ 2, card ]);
+shuffle(planechaseAnthologyDeck);
+
+setGlobal({
+  active: 3,
+  deck: planechaseAnthologyDeck
+});
 
 ReactDOM.render(
-  <Provider store={createStore(reducer)}>
-    <App />
-  </Provider>,
+  <App />,
   document.getElementById('root')
 );
 

@@ -1,0 +1,50 @@
+// 1490x1040
+$ratio: 1490 / 1080;
+$ratio-vh: $ratio * 100vh;
+$ratio-vw: $ratio * 100vw;
+$rratio: 1 / $ratio;
+$rratio-vh: $rratio * 100vh;
+$rratio-vw: $rratio * 100vw;
+
+.card {
+
+  // The screen is thinner than it is tall.
+  @media (max-width: 100vh) {
+
+    // The screen isn't as wide as a card.
+    @media (max-width: $rratio-vh) {
+      height: $ratio-vw;
+      width: 100vw;
+    }
+
+    // The screen is wider than a card.
+    @media (min-width: $rratio-vh) {
+      height: 100vh;
+      width: $rratio-vh;
+    }
+  }
+
+  // The screen is wider than it is tall.
+  @media (min-width: 100vh) {
+    transform: rotateZ(90deg);
+
+    // The screen isn't as wide as a card.
+    @media (max-width: $ratio-vh) {
+      height: 100vw;
+      margin: ($rratio-vw - 100vw) / 2 auto;
+      width: $rratio-vw;
+    }
+
+    // The screen is wider than a card.
+    @media (min-width: $ratio-vh) {
+      height: $ratio-vh;
+      margin: (100vh - $ratio-vh) / 2 auto;
+      width: 100vh;
+    }
+  }
+
+  > img {
+    height: 100%;
+    width: 100%;
+  }
+}

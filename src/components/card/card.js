@@ -1,23 +1,46 @@
-import React from 'react';
+import React, { useGlobal } from 'reactn';
 import cards from '../../cards';
-import './card.css';
+import './card.scss';
 
-export default class Card extends React.PureComponent {
+const useCard = (card, set) => {
+  const bottomCard = useGlobal((global, cardId, setId) => {
+    const findCard = ([ s, c ]) => s === setId && c === cardId;
+    const index = global.deck.findIndex(findCard);
+    return {
+      deck: [
+        ...global.deck.slice(0, index),
+        global.deck[global.active],
+        ...global.deck.slice(index + 1, global.active),
+        ...global.deck.slice(global.active + 1, global.deck.length),
+        [ setId, cardId ]
+      ]
+    };
+  });
 
-  get src() {
-    const card = cards.cards[this.props.card];
-    const set = cards.sets[this.props.set];
-    return `images/${set.path}/${card.path}.${set.ext}`;
-  }
+  const handleClick = e => {
+    e.preventDefault();
+    bottomCard(card, set);
+  };
 
-  render() {
-    return (
-      <div className="card">
-        <img
-          alt={cards.cards[this.props.card].name}
-          src={this.src}
-        />
-      </div>
-    );
-  }
-}
+  return { handleClick };
+};
+
+const Card = ({ card, set }) => {
+  const { handleClick } = useCard(card, set);
+  const cardInfo = cards.cards[card];
+  const setInfo = cards.sets[set];
+  return (
+    <a
+      className="card"
+      href="#"
+      onClick={handleClick}
+    >
+      <img
+        alt={cards.cards[card].name}
+        src={`images/${setInfo.path}/${cardInfo.path}.${setInfo.ext}`}
+      />
+    </a>
+  );
+};
+
+export default Card;

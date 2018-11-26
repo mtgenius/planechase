@@ -3,8 +3,8 @@
   opacity: 0.5;
   position: absolute;
   top: 0;
-}
 
-  .settings-icon:hover {
+  &:hover {
     opacity: 1;
   }
+}
