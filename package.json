@@ -12,17 +12,21 @@
   "version": "0.1.0",
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf build && react-scripts build && mv build docs",
+    "build": "rm -rf docs && react-scripts build && mv build docs",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "dependencies": {
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2",
-    "reactn": "^0.1.1"
+    "reactn": "^0.1.3"
   },
   "devDependencies": {
+    "@types/node": "^10.12.10",
+    "@types/react": "^16.7.7",
+    "@types/react-dom": "^16.0.10",
     "node-sass": "^4.10.0",
-    "react-scripts": "^2.1.1"
+    "react-scripts": "^2.1.1",
+    "typescript": "^3.1.6"
   }
 }
