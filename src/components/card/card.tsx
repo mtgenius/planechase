@@ -1,26 +1,21 @@
 import React from 'react';
-import cards from '../../cards.json';
+import { Card as CardType } from '../../constants/cards';
+import sets from '../../constants/sets';
 import './card.scss';
 import useCard from './hooks/use-card';
 
-interface Props {
-  card: number;
-  set: number;
-}
-
-const Card = ({ card, set }: Props) => {
-  const { className, handleClick } = useCard(card, set);
-  const cardInfo = cards.cards[card];
-  const setInfo = cards.sets[set];
+const Card = ({ name, path, set }: CardType) => {
+  const { className, handleClick } = useCard(name, path, set);
+  const setInfo = sets[set];
   return (
     <a
       className={className}
-      href={`#${setInfo.path}/${cardInfo.path}`}
+      href={`#${setInfo.path}/${path}`}
       onClick={handleClick}
     >
       <img
-        alt={cards.cards[card].name}
-        src={`images/${setInfo.path}/${cardInfo.path}.${setInfo.ext}`}
+        alt={name}
+        src={`images/${setInfo.path}/${path}.${setInfo.ext}`}
       />
     </a>
   );
