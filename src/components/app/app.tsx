@@ -1,11 +1,13 @@
 import React from 'react';
-import Deck from '../deck/deck';
+import Action from '../action/action';
 import Settings from '../settings/settings';
+import Main from './main/app-main';
 
 const App = () =>
   <>
     <Settings />
-    <Deck />
+    <Action />
+    <Main />
   </>;
 
 export default App;

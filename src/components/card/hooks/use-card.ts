@@ -11,9 +11,10 @@ interface CardHook {
 
 export default function useCard(name: Card['name'], path: Card['path'], set: Card['set']): CardHook {
 
+  const setAction = useGlobal<null | string>('action', true);
   const [ fadingOut, setFadingOut ] = useState(false);
 
-  const bottomCard = useGlobal(
+  const setBottomCard = useGlobal(
     (global, name: Card['name'], path: Card['path'], set: Card['set']) => {
 
       // Find this card in the deck.
@@ -24,9 +25,15 @@ export default function useCard(name: Card['name'], path: Card['path'], set: Car
 
       const index: number = global.deck.findIndex(findCard);
 
-      // If the card isn't found in the deck, ignore this.
+      // If the card isn't found in the deck, add it.
+      // (This shouldn't happen.)
       if (index === -1) {
-        return null;
+        return {
+          deck: [
+            ...global.deck,
+            { name, path, set }
+          ]
+        };
       }
 
       // Return a new deck where this card is at the end.
@@ -48,7 +55,7 @@ export default function useCard(name: Card['name'], path: Card['path'], set: Car
       let timeout: number;
       if (fadingOut) {
         timeout = window.setTimeout(() => {
-          bottomCard(name, path, set);
+          setBottomCard(name, path, set);
         }, 500);
       }
       return () => {
@@ -64,7 +71,21 @@ export default function useCard(name: Card['name'], path: Card['path'], set: Car
 
   const handleClick: ClickHandler = e => {
     e.preventDefault();
-    setFadingOut(true);
+
+    // Phenomenon: Interplanar Tunnel lets you pick the next Plane from the top 5 cards.
+    if (name === 'Interplanar Tunnel') {
+      setAction('reveal5bottomRandom');
+    }
+
+    // Phenomenon: Spatial Merging
+    else if (name === 'Spatial Merging') {
+      setAction('double');
+    }
+
+    // Default click behavior
+    else {
+      setFadingOut(true);
+    }
   };
 
   return { className, handleClick };

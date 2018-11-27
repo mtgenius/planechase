@@ -11,6 +11,7 @@ const PLANECHASE_ANTHOLOGY = sets.findIndex(set => set.name === 'Planechase Anth
 const planechaseAnthologyDeck = cards.filter(card => card.set === PLANECHASE_ANTHOLOGY);
 
 setGlobal({
+  action: null,
   active: 1,
   deck: shuffle(planechaseAnthologyDeck)
 });

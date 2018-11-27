@@ -3,19 +3,9 @@
 
   align-items: center;
   display: flex;
+  justify-content: center;
   max-height: 100vh;
   max-width: $width;
   min-height: 100vh;
   min-width: $width;
-
-  // The screen is thinner than it is tall.
-  @media (max-width: 100vh) {
-    flex-direction: column;
-  }
-
-  // The screen is wider than it is tall.
-  @media (min-width: 100vh) {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
 }
