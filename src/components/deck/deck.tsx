@@ -1,25 +1,15 @@
-import React, { useGlobal } from 'reactn';
+import React from 'reactn';
 import { Card as CardType } from '../../constants/cards';
 import CardView from '../card/card';
-import './deck.scss';
 
-const mapCards = ({ name, path, set }: CardType) =>
+const mapCards = (card: CardType) =>
   <CardView
-    name={name}
-    key={set + '/' + path}
-    path={path}
-    set={set}
+    {...card}
+    key={card.set + '/' + card.path}
   />;
 
-const Deck = () => {
-  const [ active ] = useGlobal<number>('active');
-  const [ deck ] = useGlobal<CardType[]>('deck');
-  return (
-    <div
-      children={deck.slice(0, active).map(mapCards)}
-      className="deck"
-    />
-  );
-};
-
-export default Deck;
+export default class Deck extends React.PureComponent {
+  render() {
+    return <>{this.global.deck.slice(0, this.global.active).map(mapCards)}</>;
+  }
+}

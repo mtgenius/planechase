@@ -13,10 +13,10 @@ const HEIGHT = 500;
 const WIDTH = 600;
 
 const ActionChaos = ({
-  fill = '#F0F0F0',
+  fill = '#808080',
   onClick,
-  size = WIDTH,
-  stroke = '#202020'
+  size = 64,
+  stroke = '#404040'
 }: Props) =>
   <svg
     height={size / WIDTH * HEIGHT}

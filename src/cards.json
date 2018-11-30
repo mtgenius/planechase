@@ -222,7 +222,8 @@
         },
         {
           "name": "Chaotic \u00C6ther",
-          "path": "chaotic-aether"
+          "path": "chaotic-aether",
+          "phenomenon": true
         },
         {
           "name": "Edge of Malacol",
@@ -254,7 +255,8 @@
         },
         {
           "name": "Interplanar Tunnel",
-          "path": "interplanar-tunnel"
+          "path": "interplanar-tunnel",
+          "phenomenon": true
         },
         {
           "name": "Jund",
@@ -278,7 +280,8 @@
         },
         {
           "name": "Morphic Tide",
-          "path": "morphic-tide"
+          "path": "morphic-tide",
+          "phenomenon": true
         },
         {
           "name": "Mount Keralia",
@@ -286,7 +289,8 @@
         },
         {
           "name": "Mutual Epiphany",
-          "path": "mutual-epiphany"
+          "path": "mutual-epiphany",
+          "phenomenon": true
         },
     
         {
@@ -311,7 +315,8 @@
         },
         {
           "name": "Planewide Disaster",
-          "path": "planewide-disaster"
+          "path": "planewide-disaster",
+          "phenomenon": true
         },
         {
           "name": "Prahv",
@@ -323,7 +328,8 @@
         },
         {
           "name": "Reality Shaping",
-          "path": "reality-shaping"
+          "path": "reality-shaping",
+          "phenomenon": true
         },
         {
           "name": "Selesnya Loft Gardens",
@@ -331,7 +337,8 @@
         },
         {
           "name": "Spatial Merging",
-          "path": "spatial-merging"
+          "path": "spatial-merging",
+          "phenomenon": true
         },
         {
           "name": "Stensia",
@@ -351,7 +358,8 @@
         },
         {
           "name": "Time Distortion",
-          "path": "time-distortion"
+          "path": "time-distortion",
+          "phenomenon": true
         },
         {
           "name": "Trail of the Mage Rings",
@@ -394,32 +402,13 @@
           "path": "academy-at-tolaria-west"
         },
         {
-          "name": "Agyrem",
-          "path": "agyrem"
-        },
-        {
-          "name": "Akoum",
-          "path": "akoum"
-        },
-        {
-          "name": "Aretopolis",
-          "path": "aretopolis"
-        },
-        {
-          "name": "Astral Arena",
-          "path": "astral-arena"
-        },
-        {
-          "name": "Bant",
-          "path": "bant"
-        },
-        {
           "name": "Bloodhill Bastion",
           "path": "bloodhill-bastion"
         },
         {
           "name": "Chaotic \u00C6ther",
-          "path": "chaotic-aether"
+          "path": "chaotic-aether",
+          "phenomenon": true
         },
         {
           "name": "Celestine Reef",
@@ -434,304 +423,22 @@
           "path": "edge-of-malacol"
         },
         {
-          "name": "Eloren Wilds",
-          "path": "eloren-wilds"
-        },
-        {
-          "name": "Feeding Grounds",
-          "path": "feeding-grounds"
-        },
-        {
-          "name": "Fields of Summer",
-          "path": "fields-of-summer"
-        },
-        {
-          "name": "Furnace Layer",
-          "path": "furnace-layer"
-        },
-        {
-          "name": "Gavony",
-          "path": "gavony"
-        },
-        {
-          "name": "Glen Elendra",
-          "path": "glen-elendra"
-        },
-        {
-          "name": "Glimmervoid Basin",
-          "path": "glimmervoid-basin"
-        },
-        {
-          "name": "Goldmeadow",
-          "path": "goldmeadow"
-        },
-        {
-          "name": "Grand Ossuary",
-          "path": "grand-ossuary"
-        },
-        {
-          "name": "Grixis",
-          "path": "grixis"
-        },
-        {
-          "name": "Grove of the Dreampods",
-          "path": "grove-of-the-dreampods"
-        },
-        {
-          "name": "Hedron Fields of Agadeem",
-          "path": "hedron-fields-of-agadeem"
-        },
-        {
-          "name": "Horizon Boughs",
-          "path": "horizon-boughs"
-        },
-        {
-          "name": "Immersturm",
-          "path": "immersturm"
-        },
-        {
           "name": "Interplanar Tunnel",
-          "path": "interplanar-tunnel"
-        },
-        {
-          "name": "Isle of Vesuva",
-          "path": "isle-of-vesuva"
-        },
-        {
-          "name": "Izzet Steam Maze",
-          "path": "izzet-steam-maze"
-        },
-        {
-          "name": "Jund",
-          "path": "jund"
-        },
-        {
-          "name": "Kessig",
-          "path": "kessig"
-        },
-        {
-          "name": "Kharasha Foothills",
-          "path": "kharasha-foothills"
-        },
-        {
-          "name": "Kilnspire District",
-          "path": "kilnspire-district"
-        },
-        {
-          "name": "Krosa",
-          "path": "krosa"
-        },
-        {
-          "name": "Lair of the Ashen Idol",
-          "path": "lair-of-the-ashen-idol"
-        },
-        {
-          "name": "Lethe Lake",
-          "path": "lethe-lake"
-        },
-        {
-          "name": "Llanowar",
-          "path": "llanowar"
-        },
-        {
-          "name": "Minamo",
-          "path": "minamo"
-        },
-        {
-          "name": "Mirrored Depths",
-          "path": "mirrored-depths"
-        },
-        {
-          "name": "Morphic Tide",
-          "path": "morphic-tide"
-        },
-        {
-          "name": "Mount Keralia",
-          "path": "mount-keralia"
-        },
-        {
-          "name": "Murasa",
-          "path": "murasa"
-        },
-        {
-          "name": "Mutual Epiphany",
-          "path": "mutual-epiphany"
-        },
-        {
-          "name": "Naar Isle",
-          "path": "naar-isle"
-        },
-        {
-          "name": "Naya",
-          "path": "naya"
-        },
-        {
-          "name": "Nephalia",
-          "path": "nephalia"
-        },
-        {
-          "name": "Norn's Dominion",
-          "path": "norns-dominion"
-        },
-        {
-          "name": "Onakke Catacomb",
-          "path": "onakke-catacomb"
-        },
-        {
-          "name": "Orochi Colony",
-          "path": "orochi-colony"
-        },
-        {
-          "name": "Orzhova",
-          "path": "orzhova"
-        },
-        {
-          "name": "Otaria",
-          "path": "otaria"
-        },
-        {
-          "name": "Panopticon",
-          "path": "panopticon"
-        },
-        {
-          "name": "Planewide Disaster",
-          "path": "planewide-disaster"
+          "path": "interplanar-tunnel",
+          "phenomenon": true
         },
         {
           "name": "Pools of Becoming",
           "path": "pools-of-becoming"
         },
         {
-          "name": "Prahv",
-          "path": "prahv"
-        },
-        {
-          "name": "Quicksilver Sea",
-          "path": "quicksilver-sea"
-        },
-        {
-          "name": "Raven's Run",
-          "path": "ravens-run"
-        },
-        {
-          "name": "Reality Shaping",
-          "path": "reality-shaping"
-        },
-        {
-          "name": "Sanctum of Serra",
-          "path": "sanctum-of-serra"
-        },
-        {
-          "name": "Sea of Sand",
-          "path": "sea-of-sand"
-        },
-        {
-          "name": "Selesnya Loft Gardens",
-          "path": "selesnya-loft-gardens"
-        },
-        {
-          "name": "Shiv",
-          "path": "shiv"
-        },
-        {
-          "name": "Skybreen",
-          "path": "skybreen"
-        },
-        {
-          "name": "Sokenzan",
-          "path": "sokenzan"
-        },
-        {
           "name": "Spatial Merging",
-          "path": "spatial-merging"
+          "path": "spatial-merging",
+          "phenomenon": true
         },
         {
           "name": "Stairs to Infinity",
           "path": "stairs-to-infinity"
-        },
-        {
-          "name": "Stensia",
-          "path": "stensia"
-        },
-        {
-          "name": "Stronghold Furnace",
-          "path": "stronghold-furnace"
-        },
-        {
-          "name": "Takenuma",
-          "path": "takenuma"
-        },
-        {
-          "name": "Talon Gates",
-          "path": "talon-gates"
-        },
-        {
-          "name": "Tazeem",
-          "path": "tazeem"
-        },
-        {
-          "name": "Tember City",
-          "path": "tember-city"
-        },
-        {
-          "name": "The \u00C6ther Flues",
-          "path": "the-aether-flues"
-        },
-        {
-          "name": "The Dark Barony",
-          "path": "the-dark-barony"
-        },
-        {
-          "name": "The Eon Fog",
-          "path": "the-eon-fog"
-        },
-        {
-          "name": "The Fourth Sphere",
-          "path": "the-fourth-sphere"
-        },
-        {
-          "name": "The Great Forest",
-          "path": "the-great-forest"
-        },
-        {
-          "name": "The Hippodrome",
-          "path": "the-hippodrome"
-        },
-        {
-          "name": "The Maelstrom",
-          "path": "the-maelstrom"
-        },
-        {
-          "name": "The Zephyr Maze",
-          "path": "the-zephyr-maze"
-        },
-        {
-          "name": "Time Distortion",
-          "path": "time-distortion"
-        },
-        {
-          "name": "Trail of the Mage Rings",
-          "path": "trail-of-the-mage-rings"
-        },
-        {
-          "name": "Truga Jungle",
-          "path": "truga-jungle"
-        },
-        {
-          "name": "Turri Island",
-          "path": "turri-island"
-        },
-        {
-          "name": "Undercity Reaches",
-          "path": "undercity-reaches"
-        },
-        {
-          "name": "Velis Vel",
-          "path": "velis-vel"
-        },
-        {
-          "name": "Windriddle Palaces",
-          "path": "windriddle-palaces"
         }
       ],
       "ext": "jpg"

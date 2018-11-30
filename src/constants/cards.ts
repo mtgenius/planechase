@@ -3,9 +3,11 @@ import cardsJson from '../cards.json';
 interface CardJson {
   name: string;
   path: string;
+  phenomenon?: boolean;
 }
 
 export interface Card extends CardJson {
+  phenomenon: boolean;
   set: number;
 }
 
@@ -16,7 +18,11 @@ interface SetJson {
 const flatten = (acc: Card[], curr: Card[]): Card[] => acc.concat(curr);
 
 const mapSetsToCards = ({ cards }: SetJson, set: number): Card[] =>
-  cards.map(card => ({ ...card, set }));
+  cards.map(card => ({
+    ...card,
+    phenomenon: !!card.phenomenon,
+    set
+  }));
 
 export default cardsJson.sets
   .map(mapSetsToCards)
