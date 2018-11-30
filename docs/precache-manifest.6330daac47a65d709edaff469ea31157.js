@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/planechase/static/js/runtime~main.2d27dc94.js"
   },
   {
-    "revision": "e7106e646dc52baec9a6",
-    "url": "/planechase/static/js/main.e7106e64.chunk.js"
+    "revision": "22dd2ba38bf16fedb157",
+    "url": "/planechase/static/js/main.22dd2ba3.chunk.js"
   },
   {
     "revision": "d01c9856a3736a157d96",
     "url": "/planechase/static/js/1.d01c9856.chunk.js"
   },
   {
-    "revision": "e7106e646dc52baec9a6",
+    "revision": "22dd2ba38bf16fedb157",
     "url": "/planechase/static/css/main.c9098825.chunk.css"
   },
   {
-    "revision": "0789e64e77a19aae2fe3d661df4154ec",
+    "revision": "d3488bec2af1ba0bb1ef3744f2a0de91",
     "url": "/planechase/index.html"
   }
 ];

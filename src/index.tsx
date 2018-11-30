@@ -7,7 +7,7 @@ import planeswalkReducer from './constants/reducers/planeswalk';
 import setBottomCardReducer from './constants/reducers/set-bottom-card';
 import sets from './constants/sets';
 import shuffle from './constants/shuffle';
-import { register } from './register-service-worker';
+import { unregister } from './register-service-worker';
 
 const PLANECHASE_ANTHOLOGY = sets.findIndex(set => set.name === 'Planechase Anthology');
 const planechaseAnthologyDeck = cards.filter(card => card.set === PLANECHASE_ANTHOLOGY);
@@ -29,4 +29,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-register();
+unregister();

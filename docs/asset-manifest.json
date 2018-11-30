@@ -1,7 +1,7 @@
 {
   "main.css": "/planechase/static/css/main.c9098825.chunk.css",
-  "main.js": "/planechase/static/js/main.e7106e64.chunk.js",
-  "main.js.map": "/planechase/static/js/main.e7106e64.chunk.js.map",
+  "main.js": "/planechase/static/js/main.22dd2ba3.chunk.js",
+  "main.js.map": "/planechase/static/js/main.22dd2ba3.chunk.js.map",
   "static/js/1.d01c9856.chunk.js": "/planechase/static/js/1.d01c9856.chunk.js",
   "static/js/1.d01c9856.chunk.js.map": "/planechase/static/js/1.d01c9856.chunk.js.map",
   "runtime~main.js": "/planechase/static/js/runtime~main.2d27dc94.js",
@@ -9,6 +9,6 @@
   "static/css/main.c9098825.chunk.css.map": "/planechase/static/css/main.c9098825.chunk.css.map",
   "static/media/screen.scss": "/planechase/static/media/mplantin-bold.b4db1337.woff",
   "index.html": "/planechase/index.html",
-  "precache-manifest.901fd3160c906ab41b8e5aeabf49daa3.js": "/planechase/precache-manifest.901fd3160c906ab41b8e5aeabf49daa3.js",
+  "precache-manifest.6330daac47a65d709edaff469ea31157.js": "/planechase/precache-manifest.6330daac47a65d709edaff469ea31157.js",
   "service-worker.js": "/planechase/service-worker.js"
 }
