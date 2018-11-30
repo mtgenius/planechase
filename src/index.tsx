@@ -1,6 +1,6 @@
 import React, { addReducer, setGlobal } from 'reactn';
 import ReactDOM from 'react-dom';
-import './assets/screen.scss';
+import './assets/styles/screen.scss';
 import App from './components/app/app';
 import cards from './constants/cards';
 import planeswalkReducer from './constants/reducers/planeswalk';
@@ -16,8 +16,9 @@ addReducer('planeswalk', planeswalkReducer);
 addReducer('setBottomCard', setBottomCardReducer);
 
 setGlobal({
-  action: null,
   active: 1,
+  afterChoiceBottom: [],
+  choose: 0,
   deck: shuffle(planechaseAnthologyDeck),
   scry: null,
   topChaos: 0

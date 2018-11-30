@@ -1,7 +1,7 @@
-import React from 'react';
-import SettingsIcon from './icon/settings-icon';
+// import React from 'react';
+// import SettingsIcon from './icon/settings-icon';
 
 const Settings = () =>
-  <SettingsIcon />;
+  null; // <SettingsIcon />;
 
 export default Settings;

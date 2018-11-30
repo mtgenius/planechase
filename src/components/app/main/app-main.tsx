@@ -1,4 +1,5 @@
 import React from 'reactn';
+import shuffle from '../../../constants/shuffle';
 import Card from '../../card/card';
 import Deck from '../../deck/deck';
 import './app-main.scss';
@@ -7,28 +8,14 @@ const doNothing = () => {};
 
 export default class AppMain extends React.PureComponent {
 
-  activateTopChaosTimeout: null | number = null;
-
-  componentWillUnmount() {
-    if (this.activateTopChaosTimeout !== null) {
-      window.clearTimeout(this.activateTopChaosTimeout);
-    }
-  }
-
-  activateTopChaos = () => {
-    if (this.activateTopChaosTimeout !== null) {
-      window.clearTimeout(this.activateTopChaosTimeout);
-    }
-
-    console.log(this.global.deck, this.global.topChaos);
+  activateTopChaos = (): void => {
+    const topCard = this.global.deck[this.global.active];
 
     this.global.setBottomCard(
-      this.global.deck[1].name,
-      this.global.deck[1].path,
-      this.global.deck[1].phenomenon,
-      this.global.deck[1].set, {
+      topCard.name, topCard.path,
+      topCard.phenomenon, topCard.set, {
         scry:
-          this.global.deck[1].name === 'Stairs to Infinity' ?
+          topCard.name === 'Stairs to Infinity' ?
             1 :
             this.global.scry,
         topChaos: this.global.topChaos - 1
@@ -36,21 +23,45 @@ export default class AppMain extends React.PureComponent {
     );
   };
 
+  handleChooseClick = (i: number): EventListener =>
+    (): void => {
+      this.setGlobal(global => ({
+        afterChoiceBottom: [],
+        choose: 0,
+        deck: [
+
+          // Chosen card
+          global.deck[i],
+
+          // Cards after top X planes
+          ...global.deck.slice(global.choose, global.deck.length),
+
+          // Unchosen cards
+          ...shuffle([
+            ...global.afterChoiceBottom,
+            ...global.deck.slice(0, i),
+            ...global.deck.slice(i + 1, global.choose)
+          ])
+        ]
+      }));
+    };
+
   render() {
 
-    /*
-    if (null === 'reveal5bottomRandom') {
+    // Choose
+    if (this.global.choose > 0) {
       return (
         <div className="app-main">
-          <CardView {...deck[1]} />
-          <CardView {...deck[2]} />
-          <CardView {...deck[3]} />
-          <CardView {...deck[4]} />
-          <CardView {...deck[5]} />
+          {new Array(this.global.choose).fill(null).map((_, i) =>
+            <Card
+              {...this.global.deck[i]}
+              key={this.global.deck[i].set + '/' + this.global.deck[i].path}
+              onClick={this.handleChooseClick(i)}
+            />
+          )}
         </div>
       );
     }
-    */
 
     // Scry
     if (this.global.scry !== null) {
@@ -66,21 +77,12 @@ export default class AppMain extends React.PureComponent {
 
     // Execute the Chaos ability of the top X planar cards in the deck.
     if (this.global.topChaos > 0) {
-
-      // Phenomena don't have Chaos abilities.
-      if (this.global.deck[1].phenomenon) {
-        this.activateTopChaosTimeout = window.setTimeout(this.activateTopChaos, 2500);
-      }
-
+      const topCard = this.global.deck[this.global.active];
       return (
         <div className="app-main">
           <Card
-            {...this.global.deck[1]}
-            onClick={
-              this.global.deck[1].phenomenon ?
-                doNothing :
-                this.activateTopChaos
-            }
+            {...topCard}
+            onClick={this.activateTopChaos}
           />
         </div>
       );

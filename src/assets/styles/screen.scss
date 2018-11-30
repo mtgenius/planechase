@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "MPlantin";
+  font-weight: normal;
+  src: url('../fonts/mplantin.woff') format('woff');
+}
+
+@font-face {
+  font-family: "MPlantin";
+  font-weight: bold;
+  src: url('../fonts/mplantin-bold.woff') format('woff');
+}
+
 ::-webkit-scrollbar {
   height: 0.5rem;
   width: 0.5rem;

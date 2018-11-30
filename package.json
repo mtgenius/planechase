@@ -1,6 +1,7 @@
 {
-  "author": "Charles Stover",
   "name": "planechase",
+  "version": "1.0.0",
+  "author": "Charles Stover",
   "browserslist": [
     ">0.2%",
     "not dead",
@@ -9,7 +10,6 @@
   ],
   "homepage": "/planechase/",
   "private": true,
-  "version": "0.1.0",
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf docs && react-scripts build && mv build docs",
@@ -19,7 +19,7 @@
   "dependencies": {
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2",
-    "reactn": "^0.1.5"
+    "reactn": "^0.1.6"
   },
   "devDependencies": {
     "@types/node": "^10.12.10",

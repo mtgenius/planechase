@@ -39,14 +39,18 @@ $rratio-vw: $rratio * 100vw;
 
     // The screen isn't as wide as a card.
     @media (max-width: $rratio-vh) {
-      height: $ratio-vw;
-      width: 100vw;
+      max-height: $ratio-vw;
+      max-width: 100vw;
+      min-height: $ratio-vw;
+      min-width: 100vw;
     }
 
     // The screen is wider than a card.
     @media (min-width: $rratio-vh) {
-      height: 100vh;
-      width: $rratio-vh;
+      max-height: 100vh;
+      max-width: $rratio-vh;
+      min-height: 100vh;
+      min-width: $rratio-vh;
     }
   }
 
@@ -56,16 +60,20 @@ $rratio-vw: $rratio * 100vw;
 
     // The screen isn't as wide as a card.
     @media (max-width: $ratio-vh) {
-      height: 100vw;
       margin: ($rratio-vw - 100vw) / 2 auto;
-      width: $rratio-vw;
+      max-height: 100vw;
+      max-width: $rratio-vw;
+      min-height: 100vw;
+      min-width: $rratio-vw;
     }
 
     // The screen is wider than a card.
     @media (min-width: $ratio-vh) {
-      height: $ratio-vh;
       margin: (100vh - $ratio-vh) / 2 auto;
-      width: 100vh;
+      max-height: $ratio-vh;
+      min-height: $ratio-vh;
+      max-width: 100vh;
+      min-width: 100vh;
     }
   }
 

@@ -13,9 +13,9 @@ const HEIGHT = 500;
 const WIDTH = 600;
 
 const ActionChaos = ({
-  fill = '#808080',
+  fill = 'currentColor',
   onClick,
-  size = 64,
+  size = 48,
   stroke = '#404040'
 }: Props) =>
   <svg

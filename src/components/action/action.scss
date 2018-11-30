@@ -1,8 +1,68 @@
+@import "../../assets/styles/theme";
+
 .action {
+  $padding: 0.5rem;
+
+  align-items: center;
   color: #F0F0F0;
-  cursor: pointer;
-  position: absolute;
-  right: 0.5rem;
-  top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  right: $padding;
+  top: $padding;
   z-index: 1;
+
+  > button {
+    border-width: 0;
+    font-size: 0.85rem;
+    height: 2.25rem;
+    letter-spacing: 0.5px;
+    line-height: 2.25rem;
+    padding: 0 1rem;
+  }
+
+  > button,
+  > p,
+  > svg {
+    border-radius: 0.125rem;
+    box-shadow:
+      0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.12),
+      0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+    &:not(:last-child) {
+      margin-right: $padding;
+    }
+  }
+
+  > button,
+  > svg {
+    background-color: $secondary;
+    color: $secondary-fg;
+    cursor: pointer;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: background-color, color;
+    transition-timing-function: ease-out;
+
+    &:hover {
+      background-color: $secondary-dark;
+      color: $secondary-dark-fg;
+    }
+  }
+
+  > p {
+    background-color: $primary-light;
+    color: $primary-light-fg;
+    font-family: $serif;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  > svg {
+    padding: 0.5rem;
+  }
 }

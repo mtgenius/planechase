@@ -3,7 +3,8 @@
 
   align-items: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   max-height: 100vh;
   max-width: $width;
   min-height: 100vh;

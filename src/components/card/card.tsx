@@ -52,9 +52,21 @@ export default class Card extends React.PureComponent<Props, State> {
       return;
     }
 
-    // Phenomenon: Pick the next Plane from the top 5 cards.
+    // Phenomenon: Pick the next Plane from the top 5 Planes.
     if (this.props.name === 'Interplanar Tunnel') {
-      // setAction('reveal5bottomRandom');
+      const deck = [ ...this.global.deck ];
+      const afterChoiceBottom = [];
+      for (let i = 0; i < 5; i++) {
+        while (deck[i].phenomenon) {
+          afterChoiceBottom.push(deck.splice(i, 1)[0]);
+        }
+      }
+      this.setGlobal({
+        active: 1,
+        afterChoiceBottom,
+        choose: 5,
+        deck
+      });
       return;
     }
 
@@ -72,20 +84,19 @@ export default class Card extends React.PureComponent<Props, State> {
       const deck = [ ...this.global.deck ];
       for (let i = 0; i < this.global.active + 1; i++) {
         while (deck[i].phenomenon) {
-          deck.push(deck.shift());
+          deck.push(deck.splice(i, 1)[0]);
         }
       }
       this.setGlobal(global => ({
         active: global.active + 1,
         deck
       }));
+      return;
     }
 
     // If we are planeswalking, move all active planes
     //   to the bottom and return to a single plane.
-    else {
-      this.global.planeswalk();
-    }
+    this.global.planeswalk();
   };
 
   render() {
