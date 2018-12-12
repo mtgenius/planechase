@@ -7807,10 +7807,10 @@ react@^16.7.0-alpha.2:
     prop-types "^15.6.2"
     scheduler "^0.12.0-alpha.2"
 
-reactn@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/reactn/-/reactn-0.1.6.tgz#fbabde196d36784568422d71abba93098020d660"
-  integrity sha512-fg8CdJUg0F/jES+BWV5OBOfFpAbr9iabzxP5cmTaJe7vcZo21/1+yuADrjd5lIVEtdknfYmfcIU13vM83Ku/JA==
+reactn@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/reactn/-/reactn-0.1.8.tgz#89b7c856edb788ca094328d34249610fa6feb1fe"
+  integrity sha512-OfXZnWrZxIR4y7sp8OgPU3+rDy7kdCko+RIqNFZoVmI1RGPUe6TrShyI1DSMt7N2V0YQZzZ0NxWfTEQ1AJqAtg==
   dependencies:
     use-force-update "^1.0.0"
 
