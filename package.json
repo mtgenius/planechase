@@ -22,7 +22,7 @@
     "reactn": "^0.1.8"
   },
   "devDependencies": {
-    "@types/node": "^10.12.10",
+    "@types/node": "^12.6.2",
     "@types/react": "^16.7.9",
     "@types/react-dom": "^16.0.10",
     "node-sass": "^4.10.0",
