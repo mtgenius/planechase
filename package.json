@@ -19,7 +19,7 @@
   "dependencies": {
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2",
-    "reactn": "^0.1.8"
+    "reactn": "^2.1.4"
   },
   "devDependencies": {
     "@types/node": "^12.6.2",
