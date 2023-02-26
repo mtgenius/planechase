@@ -1,0 +1,12 @@
+.root {
+  $width: calc(100vw - 1rem);
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 100vh;
+  max-width: $width;
+  min-height: 100vh;
+  min-width: $width;
+}

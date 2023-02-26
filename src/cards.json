@@ -1,6 +1,7 @@
 {
   "sets": [
     {
+      "extension": "jpg",
       "name": "Planechase",
       "path": "planechase",
       "cards": [
@@ -164,13 +165,10 @@
           "name": "Velis Vel",
           "path": "velis-vel"
         }
-      ],
-      "ext": "jpg"
+      ]
     },
-
-
-
     {
+      "extension": "jpg",
       "name": "Planechase (Promo)",
       "path": "planechase-promo",
       "cards": [
@@ -194,13 +192,10 @@
           "name": "Tember City",
           "path": "tember-city"
         }
-      ],
-      "ext": "jpg"
+      ]
     },
-
-
-
     {
+      "extension": "jpg",
       "name": "Planechase 2012",
       "path": "planechase-2012",
       "cards": [
@@ -292,7 +287,7 @@
           "path": "mutual-epiphany",
           "phenomenon": true
         },
-    
+
         {
           "name": "Nephalia",
           "path": "nephalia"
@@ -373,13 +368,10 @@
           "name": "Windriddle Palaces",
           "path": "windriddle-palaces"
         }
-      ],
-      "ext": "jpg"
+      ]
     },
-
-
-
     {
+      "extension": "jpg",
       "name": "Planechase 2012 (Promo)",
       "path": "planechase-2012-promo",
       "cards": [
@@ -387,13 +379,10 @@
           "name": "Stairs to Infinity",
           "path": "stairs-to-infinity"
         }
-      ],
-      "ext": "jpg"
+      ]
     },
-
-
-
     {
+      "extension": "jpg",
       "name": "Planechase Anthology",
       "path": "planechase-anthology",
       "cards": [
@@ -744,8 +733,27 @@
           "name": "Windriddle Palaces",
           "path": "windriddle-palaces"
         }
-      ],
-      "ext": "jpg"
+      ]
+    },
+    {
+      "extension": "jpg",
+      "name": "March of the Machine Commander",
+      "path": "march-of-the-machine-commander",
+      "cards": [
+        {
+          "name": "Isle of Vesuva",
+          "path": "isle-of-vesuva"
+        },
+        {
+          "name": "Spatial Merging",
+          "path": "spacing-merging",
+          "phenomenon": true
+        },
+        {
+          "name": "Towashi",
+          "path": "towashi"
+        }
+      ]
     }
   ]
 }

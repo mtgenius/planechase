@@ -1,14 +1,15 @@
 {
-  "main.css": "/planechase/static/css/main.c9098825.chunk.css",
-  "main.js": "/planechase/static/js/main.22dd2ba3.chunk.js",
-  "main.js.map": "/planechase/static/js/main.22dd2ba3.chunk.js.map",
-  "static/js/1.d01c9856.chunk.js": "/planechase/static/js/1.d01c9856.chunk.js",
-  "static/js/1.d01c9856.chunk.js.map": "/planechase/static/js/1.d01c9856.chunk.js.map",
-  "runtime~main.js": "/planechase/static/js/runtime~main.2d27dc94.js",
-  "runtime~main.js.map": "/planechase/static/js/runtime~main.2d27dc94.js.map",
-  "static/css/main.c9098825.chunk.css.map": "/planechase/static/css/main.c9098825.chunk.css.map",
-  "static/media/screen.scss": "/planechase/static/media/mplantin-bold.b4db1337.woff",
-  "index.html": "/planechase/index.html",
-  "precache-manifest.6330daac47a65d709edaff469ea31157.js": "/planechase/precache-manifest.6330daac47a65d709edaff469ea31157.js",
-  "service-worker.js": "/planechase/service-worker.js"
+  "files": {
+    "main.css": "/planechase/static/css/main.353bc5e2.css",
+    "main.js": "/planechase/static/js/main.80fd6188.js",
+    "static/media/mplantin-bold.woff": "/planechase/static/media/mplantin-bold.75c27887a0578889922b.woff",
+    "static/media/mplantin.woff": "/planechase/static/media/mplantin.b38f07f35099b81c446c.woff",
+    "index.html": "/planechase/index.html",
+    "main.353bc5e2.css.map": "/planechase/static/css/main.353bc5e2.css.map",
+    "main.80fd6188.js.map": "/planechase/static/js/main.80fd6188.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.353bc5e2.css",
+    "static/js/main.80fd6188.js"
+  ]
 }
