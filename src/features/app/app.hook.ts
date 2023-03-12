@@ -41,7 +41,11 @@ export default function useApp(): State {
   return {
     activePlaneCount,
     isChoosing: deck.some(filterCardsByChoice),
-    scryingCards: useScryingCards(deck.filter(filterCardsByScrying), setDeck),
+    scryingCards: useScryingCards({
+      activePlaneCount,
+      cards: deck.filter(filterCardsByScrying),
+      setDeck,
+    }),
 
     activeChaos: useMemo((): readonly VoidFunction[] => {
       const reducePlanesToChaos = (

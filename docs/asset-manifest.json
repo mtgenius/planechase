@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/planechase/static/css/main.353bc5e2.css",
-    "main.js": "/planechase/static/js/main.80fd6188.js",
+    "main.js": "/planechase/static/js/main.3da20d0d.js",
     "static/media/mplantin-bold.woff": "/planechase/static/media/mplantin-bold.75c27887a0578889922b.woff",
     "static/media/mplantin.woff": "/planechase/static/media/mplantin.b38f07f35099b81c446c.woff",
     "index.html": "/planechase/index.html",
     "main.353bc5e2.css.map": "/planechase/static/css/main.353bc5e2.css.map",
-    "main.80fd6188.js.map": "/planechase/static/js/main.80fd6188.js.map"
+    "main.3da20d0d.js.map": "/planechase/static/js/main.3da20d0d.js.map"
   },
   "entrypoints": [
     "static/css/main.353bc5e2.css",
-    "static/js/main.80fd6188.js"
+    "static/js/main.3da20d0d.js"
   ]
 }

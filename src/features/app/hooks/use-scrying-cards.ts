@@ -6,10 +6,47 @@ import type Card from '../../../types/card';
 import mapDeckDispatchToScryBottomHandler from '../utils/map-deck-dispatch-to-scry-bottom-handler';
 import mapDeckDispatchToScryTopHandler from '../utils/map-deck-dispatch-to-scry-top-handler';
 
-export default function useScryingCards(
-  cards: readonly Card[],
-  setDeck: Dispatch<SetStateAction<readonly Card[]>>,
-): readonly ScryCard[] {
+interface Props {
+  readonly activePlaneCount: number;
+  readonly cards: readonly Card[];
+  readonly setDeck: Dispatch<SetStateAction<readonly Card[]>>;
+}
+
+const createScryTopHandler = ({
+  activePlaneCount,
+  card,
+  setDeck,
+}: {
+  readonly activePlaneCount: number;
+  readonly card: Card;
+  readonly setDeck: Dispatch<SetStateAction<readonly Card[]>>;
+}): VoidFunction => {
+  return function handleScryTop(): void {
+    const findCard = ({ path, set }: Readonly<Card>): boolean =>
+      card.path === path && card.set === set;
+
+    const action = (deck: readonly Card[]): readonly Card[] => {
+      const index: number = deck.findIndex(findCard);
+      return [
+        ...deck.slice(0, activePlaneCount),
+        {
+          ...deck[index],
+          effect: undefined,
+        },
+        ...deck.slice(activePlaneCount, index),
+        ...deck.slice(index + 1),
+      ];
+    };
+
+    setDeck(action);
+  };
+};
+
+export default function useScryingCards({
+  activePlaneCount,
+  cards,
+  setDeck,
+}: Readonly<Props>): readonly ScryCard[] {
   const mapCardToScry = useEvent(
     (card: Readonly<Card>): ScryCard => ({
       key: `${card.set}/${card.name}`,
@@ -18,10 +55,11 @@ export default function useScryingCards(
         const handleScryBottom = mapDeckDispatchToScryBottomHandler(setDeck);
         handleScryBottom(card);
       },
-      onTop(): void {
-        const handleScryTop = mapDeckDispatchToScryTopHandler(setDeck);
-        handleScryTop(card);
-      },
+      onTop: createScryTopHandler({
+        activePlaneCount,
+        card,
+        setDeck,
+      }),
     }),
   );
 
